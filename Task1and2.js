@@ -1,11 +1,19 @@
 class Stack {
     constructor() {
         this.items = [];
+        this.maxelements = 10;
     }
     
     // method to add elements to the stack
     push(element) {
-        return this.items[this.items.length] = element;
+        if (this.items.length >= this.maxelements)
+        {
+            console.log("stack cannot exceed max length")
+        }
+        else {
+
+        this.items[this.items.length] = element;
+    }
     }
     
     // method to remove element from the stack
@@ -33,6 +41,11 @@ stack.push(10);
 stack.push(8);
 stack.push(10);
 console.log(stack.items);
+stack.push(4);
+stack.push(8);
+stack.push(10);
+stack.push(8);
+stack.push(10);
 
 stack.pop();
 
