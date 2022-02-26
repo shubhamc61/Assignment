@@ -30,10 +30,15 @@ stack.push(2);
 stack.push(4);
 stack.push(8);
 stack.push(10);
+stack.push(8);
+stack.push(10);
 console.log(stack.items);
 
 stack.pop();
+
 console.log(stack.items);
+stack.push(8);
+stack.push(10);
 
 console.log(stack.peek());
 
