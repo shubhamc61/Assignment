@@ -27,8 +27,9 @@ class Stack {
     peek() {
         return this.items[this.items.length - 1];
     }
-
-    stacklength() {
+    
+    // method to find the size of the stack
+    stacklength() { 
         return this.items.length
     }
     
